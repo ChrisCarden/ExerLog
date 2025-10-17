@@ -8,17 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		532DE8602E29CE7D00CE2DEB /* ExerLogApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532DE85F2E29CE7D00CE2DEB /* ExerLogApp.swift */; };
-		532DE8622E29CE7D00CE2DEB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532DE8612E29CE7D00CE2DEB /* ContentView.swift */; };
 		532DE8642E29CE7F00CE2DEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 532DE8632E29CE7F00CE2DEB /* Assets.xcassets */; };
 		532DE8672E29CE7F00CE2DEB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 532DE8662E29CE7F00CE2DEB /* Preview Assets.xcassets */; };
+		532DE8712E29D10400CE2DEB /* WorkoutSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532DE8702E29D10400CE2DEB /* WorkoutSession.swift */; };
+		532DE8732E29D11500CE2DEB /* WorkoutEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532DE8722E29D11500CE2DEB /* WorkoutEntry.swift */; };
+		532DE8752E29D13600CE2DEB /* WorkoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532DE8742E29D13600CE2DEB /* WorkoutViewModel.swift */; };
+		532DE8772E29D15800CE2DEB /* AddWorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532DE8762E29D15800CE2DEB /* AddWorkoutView.swift */; };
+		532DE8792E2A146500CE2DEB /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532DE8782E2A146500CE2DEB /* CalendarView.swift */; };
+		532DE87B2E2A17E100CE2DEB /* WorkoutListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532DE87A2E2A17E100CE2DEB /* WorkoutListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		532DE85C2E29CE7D00CE2DEB /* ExerLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExerLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		532DE85F2E29CE7D00CE2DEB /* ExerLogApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerLogApp.swift; sourceTree = "<group>"; };
-		532DE8612E29CE7D00CE2DEB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		532DE8632E29CE7F00CE2DEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		532DE8662E29CE7F00CE2DEB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		532DE8702E29D10400CE2DEB /* WorkoutSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutSession.swift; sourceTree = "<group>"; };
+		532DE8722E29D11500CE2DEB /* WorkoutEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutEntry.swift; sourceTree = "<group>"; };
+		532DE8742E29D13600CE2DEB /* WorkoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutViewModel.swift; sourceTree = "<group>"; };
+		532DE8762E29D15800CE2DEB /* AddWorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorkoutView.swift; sourceTree = "<group>"; };
+		532DE8782E2A146500CE2DEB /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		532DE87A2E2A17E100CE2DEB /* WorkoutListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +61,10 @@
 		532DE85E2E29CE7D00CE2DEB /* ExerLog */ = {
 			isa = PBXGroup;
 			children = (
+				532DE86D2E29D07600CE2DEB /* Models */,
+				532DE86E2E29D07E00CE2DEB /* ViewModels */,
+				532DE86F2E29D08900CE2DEB /* Views */,
 				532DE85F2E29CE7D00CE2DEB /* ExerLogApp.swift */,
-				532DE8612E29CE7D00CE2DEB /* ContentView.swift */,
 				532DE8632E29CE7F00CE2DEB /* Assets.xcassets */,
 				532DE8652E29CE7F00CE2DEB /* Preview Content */,
 			);
@@ -65,6 +77,33 @@
 				532DE8662E29CE7F00CE2DEB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		532DE86D2E29D07600CE2DEB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				532DE8702E29D10400CE2DEB /* WorkoutSession.swift */,
+				532DE8722E29D11500CE2DEB /* WorkoutEntry.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		532DE86E2E29D07E00CE2DEB /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				532DE8742E29D13600CE2DEB /* WorkoutViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		532DE86F2E29D08900CE2DEB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				532DE8762E29D15800CE2DEB /* AddWorkoutView.swift */,
+				532DE8782E2A146500CE2DEB /* CalendarView.swift */,
+				532DE87A2E2A17E100CE2DEB /* WorkoutListView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +176,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				532DE8622E29CE7D00CE2DEB /* ContentView.swift in Sources */,
+				532DE8792E2A146500CE2DEB /* CalendarView.swift in Sources */,
 				532DE8602E29CE7D00CE2DEB /* ExerLogApp.swift in Sources */,
+				532DE8732E29D11500CE2DEB /* WorkoutEntry.swift in Sources */,
+				532DE87B2E2A17E100CE2DEB /* WorkoutListView.swift in Sources */,
+				532DE8712E29D10400CE2DEB /* WorkoutSession.swift in Sources */,
+				532DE8772E29D15800CE2DEB /* AddWorkoutView.swift in Sources */,
+				532DE8752E29D13600CE2DEB /* WorkoutViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
